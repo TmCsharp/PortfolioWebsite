@@ -1,0 +1,199 @@
+/* Welcome Text - Centered Single Line */
+.welcome-text {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(2.5rem, 6vw, 4.3rem);
+    font-family: 'Montserrat', sans-serif; /* Modern font */
+    font-weight: 500; /* Slightly lighter */
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: #f5f5f5 !important; /* Soft grey-white */
+    text-shadow: 0 1px 1px rgba(0,0,0,0.3), 0 2px 3px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25); /* Layered shadow */
+    opacity: 0.95; /* Subtle transparency */
+}
+
+/* Animation for welcome text */
+.welcome-text {
+    opacity: 0;
+    transform: translate(-50%, -40%); /* Start slightly higher */
+
+    white-space: normal; /* Allow text wrapping */
+    max-width: 90%; /* Prevent edge crowding */
+    text-wrap: balance; /* Better text distribution */
+    animation: fadeSlideIn 1.2s ease-out forwards, float 6s ease-in-out infinite 1s; /* Subtle hover effect */
+}
+
+@keyframes fadeSlideIn {
+    to {
+        opacity: 0.95;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+
+/* Invitation Text - Bottom Left */
+.invitation-text {
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    white-space: nowrap; /* Forces single line */
+    padding: 0.8rem 1.2rem; /* Tighter padding */
+    background: rgba(255,255,255,0.1);
+    border-left: 3px solid rgba(255,255,255,0.1);
+    margin: 0;
+    display: inline-block; /* Fits content width */
+    overflow: hidden; /* Prevents text overflow */
+    text-overflow: ellipsis; /* Adds "..." if text overflows */
+    color: grey;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Animation for invitation text */
+.invitation-text {
+    animation: slideInFromLeft 1.5s ease-out 0.3s forwards;
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+@keyframes slideInFromLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+/* RESET & BASE STYLES */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overscroll-behavior-y: contain; /* Optional: Smooth scrolling */
+}
+
+/* NAVBAR STYLING */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px; /* Explicit height */
+    z-index: 1000;
+    background: #2d3748; /* Match your navbar color */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+
+.hero-banner {
+    position: relative; /* Changed from absolute to relative for proper stacking */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    isolation: isolate; /* Creates new stacking context */
+    background: #121212; 
+}
+
+    .hero-banner::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/banner.jpg') center/cover no-repeat;
+        z-index: -1;
+        /* Animation properties */
+        animation: bannerEntrance 4s ease-out forwards;
+        opacity: 0;
+        transform: scale(1.05);
+    }
+
+@keyframes bannerEntrance {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+/* Optional: Add smooth transition for banner */
+@media (prefers-reduced-motion: no-preference) {
+    .hero-banner {
+        transition: height 0.3s ease;
+    }
+}
+
+
+
+
+/* Sophisticated Gray Background */
+.bg-darkgray {
+    background-color: #2d3748 !important; /* Premium dark gray */
+}
+
+/* Enhanced Button Styles */
+.nav-btn {
+    padding: 8px 20px;
+    margin: 0 4px;
+    color: #333; /* Dark text */
+    background: #f8f9fa; /* Light gray background */
+    border: 1px solid #dee2e6; /* Light border */
+    border-radius: 50px;
+    font-weight: 500;
+    text-decoration: none; /* No underline */
+    transition: all 0.2s ease;
+}
+
+    .nav-btn:hover {
+        background: #e9ecef;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(37, 140, 251, 0.25);
+        border-color: transparent;
+    }
+
+/* Active State */
+.nav-item.active .nav-btn {
+    background: #258cfb;
+    box-shadow: 0 2px 8px rgba(37, 140, 251, 0.4);
+}
+
+/* Subtle Navbar Border */
+.navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Brand Text */
+.navbar-brand {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: white !important;
+}
+
+
+
+/* Mobile menu styles */
+@media (max-width: 576px) {
+    .navbar-collapse {
+        background-color: #2c3e50; /* match your navbar color */
+        padding: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .nav-btn {
+        display: block;
+        padding: 0.5rem 1rem;
+        margin: 0.25rem 0;
+    }
+}

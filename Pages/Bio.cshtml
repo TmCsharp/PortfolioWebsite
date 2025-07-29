@@ -1,0 +1,35 @@
+﻿@page
+@model PortfolioWebsite.Pages.BioModel
+
+@{
+    ViewData["Title"] = "My Bio";
+}
+
+<div class="container">
+    <h1>@Model?.FullName</h1>
+    <p class="lead">@Model?.ProfessionalTitle</p>
+
+    @if (Model?.Skills != null)
+    {
+        <section class="mt-4">
+            <h2>Skills</h2>
+            <ul>
+                @foreach (var skill in Model.Skills)
+                {
+                    <li>@skill</li>
+                }
+            </ul>
+        </section>
+    }
+
+    @if (Model?.EducationHistory != null)
+    {
+        <section class="mt-4">
+            <h2>Education</h2>
+            @foreach (var edu in Model.EducationHistory)
+            {
+                <p><strong>@edu.Degree</strong> - @edu.Institution (@edu.Year)</p>
+            }
+        </section>
+    }
+</div>
