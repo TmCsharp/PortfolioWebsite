@@ -1,3 +1,4 @@
+
 .welcome-text {
     position: absolute;
     top: 15%;
@@ -5,7 +6,7 @@
     transform: translate(-50%, -50%);
     font-size: clamp(2.5rem, 6vw, 4.3rem);
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 500; 
     letter-spacing: -0.5px;
     white-space: nowrap;
     margin: 0;
@@ -36,6 +37,7 @@
 
 
 
+
 .invitation-text {
     position: absolute;
     left: 5%;
@@ -46,7 +48,7 @@
     background: rgba(255,255,255,0.1);
     border-left: 3px solid rgba(255,255,255,0.1);
     margin: 0;
-    display: inline-block;
+    display: inline-block; 
     overflow: hidden;
     text-overflow: ellipsis;
     color: grey;
@@ -66,6 +68,7 @@
         transform: translateX(0);
     }
 }
+
 
 
 
@@ -110,6 +113,7 @@ header {
         height: 100%;
         background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/banner.jpg') center/cover no-repeat;
         z-index: -1;
+
         animation: bannerEntrance 4s ease-out forwards;
         opacity: 0;
         transform: scale(1.05);
@@ -124,6 +128,7 @@ header {
 
 
 
+
 @media (prefers-reduced-motion: no-preference) {
     .hero-banner {
         transition: height 0.3s ease;
@@ -135,7 +140,7 @@ header {
 
 
 .bg-darkgray {
-    background-color: #2d3748 !important; 
+    background-color: #2d3748 !important;
 }
 
 
@@ -192,3 +197,325 @@ header {
         margin: 0.25rem 0;
     }
 }
+
+
+
+
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+.project-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.project-tech {
+    margin-top: auto;
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-tag {
+    background: #f3f4f6;
+    color: #1f2937;
+    padding: 0.35rem 0.7rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: #258cfb;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+    .project-link:hover {
+        background: #1a6fcf;
+    }
+
+.link-icon {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+    stroke-width: 2;
+    fill: none;
+    transition: transform 0.2s ease;
+}
+
+.project-link:hover .link-icon {
+    transform: translateX(2px);
+}
+
+body.projects-page {
+    background-color: #e2e8f0;
+    min-height: 100vh;
+}
+
+
+
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+   
+    body.projects-page footer {
+        display: none;
+    }
+}
+
+
+
+
+
+
+body.bio-page {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+.bio-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.bio-title {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 2.2rem;
+}
+
+.bio-subtitle {
+    color: #7f8c8d;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+
+.personal-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.personal-photo {
+    flex: 0 0 150px;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3498db;
+}
+
+.personal-info {
+    flex: 1;
+    min-width: 250px;
+}
+
+.info-item {
+    margin-bottom: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-label {
+    font-weight: 600;
+    color: #2c3e50;
+    min-width: 180px;
+    margin-right: 1rem;
+}
+
+.info-value {
+    color: #4a5568;
+    flex: 1;
+}
+
+
+.bio-section {
+    margin-bottom: 3rem;
+}
+
+    .bio-section h2 {
+        color: #3498db;
+        border-bottom: 2px solid #f1f1f1;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+
+.timeline-item {
+    margin-bottom: 2.5rem;
+}
+
+.timeline-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: #3498db;
+    white-space: nowrap;
+}
+
+.timeline-content {
+    padding-left: 1rem;
+    border-left: 2px solid #eee;
+}
+
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.skill-category {
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    justify-content: center;
+}
+
+.skill-tag {
+    display: inline-block;
+    background: #e8f4fc;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #2c3e50;
+}
+
+.certificate-list {
+    padding-left: 1.5rem;
+}
+
+    .certificate-list li {
+        margin-bottom: 0.5rem;
+    }
+
+.bio-quote {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-left: 4px solid #3498db;
+    font-style: italic;
+}
+
+
+@media (max-width: 768px) {
+    .bio-container {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .bio-title {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-top: 2.5rem;
+        word-break: keep-all;
+    }
+
+    .timeline-header {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+  
+    .personal-details {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .personal-photo {
+        margin-bottom: 1.5rem;
+    }
+
+    .info-item {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .info-label {
+        margin-right: 0;
+        margin-bottom: 0.3rem;
+        min-width: auto;
+    }
+
+
+
+    .bio-section h2 {
+        font-size: 1.6rem;
+    }
+}
+body.bio-page footer {
+    display: none;
+}
+

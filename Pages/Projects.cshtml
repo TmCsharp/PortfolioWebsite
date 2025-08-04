@@ -1,9 +1,160 @@
 ﻿@page
-<h1>My Projects</h1>
-<div class="project-list">
-    <div class="project">
-        <h3>Portfolio Website</h3>
-        <p>Built with ASP.NET Core and Razor Pages.</p>
-        <a href="#" class="btn btn-primary">View on GitHub</a>
+@model ProjectsModel
+
+<section class="projects-section">
+
+    <div class="container">
+        <h1 class="section-title">My GitHub Projects</h1>
+       
+
+        <div class="project-grid">
+            
+
+            <article class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title">Portfolio Website</h3>
+                    <p class="project-description">This responsive portfolio built with ASP.NET Core and Razor Pages.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Razor</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">Html</span>
+                    </div>
+                </div>
+                <a href="https://github.com/TmCsharp/PortfolioWebsite" class="project-link" target="_blank">
+                    <span>View Repository</span>
+                    <svg class="link-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                    </svg>
+                </a>
+            </article>
+
+            
+
+            <article class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title">Entity Framework Core & MSSQL Database</h3>
+                    <p class="project-description">A collection of practical exercises implementing Entity Framework Core with MSSQL.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">.NET 8</span>
+                        <span class="tech-tag">EF Core</span>
+                        <span class="tech-tag">MSSQL</span>
+                    </div>
+                </div>
+                <a href="https://github.com/TmCsharp/DB-MSSQL_EntityFrameworkCore" class="project-link" target="_blank">
+                    <span>View Repository</span>
+                    <svg class="link-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                    </svg>
+                </a>
+            </article>
+
+
+            
+            <article class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title">Advanced & OOP</h3>
+                    <p class="project-description">A collection of practical exercises implementing Object Oriented Programming.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">.NET 8</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">OOP</span>
+                    </div>
+                </div>
+                <a href="https://github.com/TmCsharp/Advanced_OOP" class="project-link" target="_blank">
+                    <span>View Repository</span>
+                    <svg class="link-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                    </svg>
+                </a>
+            </article>
+
+
+            
+            <article class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title">Fundamentals</h3>
+                    <p class="project-description">A collection of practical exercises covering core programming concepts.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">.NET 8</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Algorithms</span>
+                    </div>
+                </div>
+                <a href="https://github.com/TmCsharp/Fundamentals" class="project-link" target="_blank">
+                    <span>View Repository</span>
+                    <svg class="link-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                    </svg>
+                </a>
+            </article>
+
+
+            
+            <article class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title">Hangman Console Game</h3>
+                    <p class="project-description">A collection of practical exercises covering core programming concepts.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">.NET 8</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">ASCII Art</span>
+                    </div>
+                </div>
+                <a href="https://github.com/TmCsharp/HangMan" class="project-link" target="_blank">
+                    <span>View Repository</span>
+                    <svg class="link-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                    </svg>
+                </a>
+            </article>
+
+
+            
+            <article class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title">Rock/Paper/Scissors Console Game</h3>
+                    <p class="project-description">A collection of practical exercises covering core programming concepts.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">.NET 8</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Game Logic</span>
+                    </div>
+                </div>
+                <a href="https://github.com/TmCsharp/RockPaperScissors" class="project-link" target="_blank">
+                    <span>View Repository</span>
+                    <svg class="link-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                    </svg>
+                </a>
+            </article>
+
+
+
+            <article class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title">Guess the Number Game</h3>
+                    <p class="project-description">Console-based classic guess-the-number challenge in C#.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">.NET 8</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Game Logic</span>
+                    </div>
+                </div>
+                <a href="https://github.com/TmCsharp/GuessANumber" class="project-link" target="_blank">
+                    <span>View Repository</span>
+                    <svg class="link-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                    </svg>
+                </a>
+            </article>
+
+
+        </div>
     </div>
-</div>
+</section>
+
+
+<body class="projects-page">
+    <footer></footer>
+</body>
