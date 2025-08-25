@@ -80,6 +80,12 @@ PortfolioWebsite
 - Language proficiency
 - Certifications from SoftUni
 
+### 📱 Responsive Design
+- The website is fully responsive and optimized for:
+- Desktop (1200px+)
+- Tablet (768px - 1199px)
+- Mobile (< 768px)
+
 ## 🚦 Getting Started
 
 ### Prerequisites
