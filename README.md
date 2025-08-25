@@ -1,4 +1,34 @@
-# PortfolioWebsite
+# 🌐 Portfolio Website
+
+A modern, responsive portfolio website built with **ASP.NET Core** and **Razor Pages**.
+
+![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-6.0%2B-512BD4?logo=dotnet)
+![Razor Pages](https://img.shields.io/badge/Razor_Pages-C%23%20%7C%20HTML%20%7C%20CSS-512BD4)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+## 🚀 Features
+
+- **Responsive Design** - Optimized for desktop, tablet, and mobile devices
+- **Modern UI** - Clean, professional interface with smooth animations
+- **Fast Performance** - Built with optimized ASP.NET Core architecture
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **ASP.NET Core Razor Pages**
+- **HTML5 & CSS3**
+
+### Backend
+- **.NET 6+**
+- **C#** 
+- **Razor Syntax**
+
+### Development Tools
+- **Visual Studio 2022**
+- **Git & GitHub**
+
+## 📁 Project Structure
+
 
 ![1](https://github.com/user-attachments/assets/35185511-b518-4ef6-9245-9d822039d646)
 
