@@ -33,27 +33,27 @@ PortfolioWebsite
 
 ├── Pages/
 
-│ ├── Index.cshtml # Homepage
+│ ├── Index.cshtml --- Homepage
 
-│ ├── Projects.cshtml # Projects showcase
+│ ├── Projects.cshtml --- Projects showcase
 
-│ ├── Bio.cshtml # Professional bio
+│ ├── Bio.cshtml --- Professional bio
 
 │ └── Shared/
 
-│ └── _Layout.cshtml # Main layout
+│ └── _Layout.cshtml --- Main layout
 
 │ ├── wwwroot/
 
 │ ├── css/
 
-│ │ └── site.css # Custom styles
+│ │ └── site.css --- Custom styles
 
 │ ├── js/
 
-│ ├── images/ # Assets & profile photos
+│ ├── images/ --- Assets & profile photos
 
-│ └── lib/ # External libraries
+│ └── lib/ --- External libraries
 
 └── README.md
 
