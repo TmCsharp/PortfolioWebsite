@@ -86,12 +86,6 @@ PortfolioWebsite
 - Tablet (768px - 1199px)
 - Mobile (< 768px)
 
-## 🚦 Getting Started
-
-### Prerequisites
-- [.NET 6.0 SDK](https://dotnet.microsoft.com/download) or later
-- Code editor (Visual Studio 2022 recommended)
-- Git for version control
 
 
 ![1](https://github.com/user-attachments/assets/35185511-b518-4ef6-9245-9d822039d646)
