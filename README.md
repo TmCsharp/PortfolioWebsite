@@ -30,9 +30,13 @@ A modern, responsive portfolio website built with **ASP.NET Core** and **Razor P
 ## 📁 Project Structure
 
 PortfolioWebsite
+
 ├── Pages
+
 │ ├── Index.cshtml # Homepage
+
 │ ├── Projects.cshtml # Projects showcase
+
 │ ├── Bio.cshtml # Professional bio
 │ └── Shared/
 │ └── _Layout.cshtml # Main layout
