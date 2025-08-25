@@ -57,6 +57,37 @@ PortfolioWebsite
 
 └── README.md
 
+
+
+
+## 🎯 Sections
+
+### 🏠 Homepage
+- Hero section with introduction
+- Call-to-action buttons
+- Smooth scrolling navigation
+
+### 💼 Projects
+- Interactive project cards
+- Technology tags (C#, .NET, EF Core, etc.)
+- Direct links to GitHub repositories
+- Project descriptions and features
+
+### 👨‍💻 Bio
+- Professional experience timeline
+- Education background
+- Technical skills showcase
+- Language proficiency
+- Certifications from SoftUni
+
+## 🚦 Getting Started
+
+### Prerequisites
+- [.NET 6.0 SDK](https://dotnet.microsoft.com/download) or later
+- Code editor (Visual Studio 2022 recommended)
+- Git for version control
+
+
 ![1](https://github.com/user-attachments/assets/35185511-b518-4ef6-9245-9d822039d646)
 
 ![2](https://github.com/user-attachments/assets/0a3bf51c-288d-4506-9379-df5e84a89ddd)
