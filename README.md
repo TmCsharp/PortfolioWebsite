@@ -43,7 +43,7 @@ PortfolioWebsite
 
 │ └── _Layout.cshtml # Main layout
 
-├── wwwroot/
+│ ├── wwwroot/
 
 │ ├── css/
 
